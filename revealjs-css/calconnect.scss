@@ -143,14 +143,14 @@ html {
   }
 
   background:
-    url("../images/calconnect-top-left-corner.svg") left -70vmin top -65vmin no-repeat,
-    url("../images/calconnect-top-right-corner.svg") right -100vmin top -50vmin no-repeat,
-    url("../images/calconnect-bottom-left-corner.svg") left -55vmin bottom -40vmin no-repeat,
-    url("../images/calconnect-bottom-right-corner.svg") right -50vmin bottom -50vmin no-repeat,
+    url("../reveal-images/calconnect-top-left-corner.svg") left -70vmin top -65vmin no-repeat,
+    url("../reveal-images/calconnect-top-right-corner.svg") right -100vmin top -50vmin no-repeat,
+    url("../reveal-images/calconnect-bottom-left-corner.svg") left -55vmin bottom -40vmin no-repeat,
+    url("../reveal-images/calconnect-bottom-right-corner.svg") right -50vmin bottom -50vmin no-repeat,
     white;
 
   //.logo {
-  //  background-image: url("../images/calconnect-top-corner.svg");
+  //  background-image: url("../reveal-images/calconnect-top-corner.svg");
   //}
 }
 
@@ -282,7 +282,7 @@ html {
 	}
 
 	.logo {
-		background-image: url("../images/calconnect-square.svg");
+		background-image: url("../reveal-images/calconnect-square.svg");
 		background-repeat: no-repeat;
 		background-size: auto 100%;
 		display: inline-block;
@@ -346,10 +346,10 @@ html {
 	@include section(0vmin);
 
   background:
-    url("../images/calconnect-top-left-corner.svg") left -90vmin top -50vmin no-repeat,
-    url("../images/calconnect-top-right-corner.svg") right -60vmin top -65vmin no-repeat,
-    url("../images/calconnect-bottom-left-corner.svg") left -58vmin bottom -35vmin no-repeat,
-    url("../images/calconnect-bottom-right-corner.svg") right -45vmin bottom -45vmin no-repeat,
+    url("../reveal-images/calconnect-top-left-corner.svg") left -90vmin top -50vmin no-repeat,
+    url("../reveal-images/calconnect-top-right-corner.svg") right -60vmin top -65vmin no-repeat,
+    url("../reveal-images/calconnect-bottom-left-corner.svg") left -58vmin bottom -35vmin no-repeat,
+    url("../reveal-images/calconnect-bottom-right-corner.svg") right -45vmin bottom -45vmin no-repeat,
     white;
 
   h1 {
@@ -383,7 +383,7 @@ html {
 	}
 
 	.logo {
-    background-image: url("../images/calconnect-square.svg");
+    background-image: url("../reveal-images/calconnect-square.svg");
 		height: 12vmin;
 		width: 12vmin;
 	}
@@ -465,7 +465,7 @@ html {
 	&:not([class*='color--']),
 	&.color--light {
 		.logo {
-      background-image: url("../images/calconnect-square.svg");
+      background-image: url("../reveal-images/calconnect-square.svg");
 		}
 	}
 	&.color--midnight,
@@ -678,7 +678,7 @@ html {
 	}
 
 	.logo {
-    background-image: url("../images/calconnect-square.svg");
+    background-image: url("../reveal-images/calconnect-square.svg");
 		background-position: center;
 		background-size: contain;
 		height: auto;
