@@ -37,6 +37,9 @@ $heading2Size: 1.3em;
 $heading3Size: 1.1em;
 $heading4Size: 1.0em;
 
+body {
+  margin: 0;
+}
 section.has-light-background {
 	&, h1, h2, h3, h4, h5, h6 {
 		color: #222;
@@ -194,6 +197,7 @@ html {
   // Calconnect override
 	//margin-bottom: 2.5vmin;
 	padding: 2.5vmin;
+  margin: 0;
 }
 
 .reveal .slides section {
@@ -351,10 +355,10 @@ html {
   h1 {
     color: $white;
     margin-top: 20vmin;
-    margin-bottom: 10vmin;
   }
 
   .preamble {
+    margin-top: 10vmin;
     font-size: 4vmin;
   }
 
