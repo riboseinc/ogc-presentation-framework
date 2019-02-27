@@ -1,4 +1,4 @@
-= CalConnect Presentation Framework
+= OGC Presentation Framework
 
 == General
 
@@ -39,7 +39,7 @@ git submodule init
 git submodule update
 ----
 
-=== Updating the Reveal.js calconnect.css Stylesheet
+=== Updating the Reveal.js ogc.css Stylesheet
 
 From this exact directory.
 
@@ -58,10 +58,10 @@ Regenerate the CSS:
 
 [source,shell]
 ----
-cp revealjs-css/calconnect.scss reveal.js/css/theme/source/
+cp revealjs-css/ogc.scss reveal.js/css/theme/source/
 pushd reveal.js
 grunt css-themes
 popd
-cp reveal.js/css/theme/calconnect.css revealjs-css/
+cp reveal.js/css/theme/ogc.css revealjs-css/
 ----
 

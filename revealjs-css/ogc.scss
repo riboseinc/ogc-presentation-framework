@@ -1,5 +1,5 @@
 /**
- * CalConnect theme for reveal.js.
+ * OGC theme for reveal.js.
  */
 
 // Default mixins and settings -----------------
@@ -10,7 +10,7 @@
 // Include theme-specific fonts
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
-$ccviolet: #485094;
+$ogcblue: #003366;
 $blockMargin: 2vmin;
 
 // Override theme settings (see ../template/settings.scss)
@@ -23,13 +23,13 @@ $headingColor: #222;
 $mainFontSize: inherit;
 //$mainFont: 'Avenir Next', 'Source Sans Pro', Helvetica, sans-serif;
 //$headingFont: 'Rams', 'Source Sans Pro', Helvetica, sans-serif;
-$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
-$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$mainFont: 'Helvetica Neue', Helvetica, Arial;
+$headingFont: 'Helvetica Neue', Helvetica, Arial;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: none;
 $headingFontWeight: 600;
-$linkColor: $ccviolet; //#42affa;
+$linkColor: $ogcblue; //#42affa;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 $heading1Size: 2.0em;
@@ -133,24 +133,24 @@ html {
   ul li:before {
     content: "\f105";
     font-family: FontAwesome;
-    color: $ccviolet; /* or whatever color you prefer */
+    color: $ogcblue; /* or whatever color you prefer */
     position: absolute;
     left: -3vmin;
   }
 
   .admonitionblock {
-    color: $ccviolet;
+    color: $ogcblue;
   }
 
   background:
-    url("../reveal-images/calconnect-top-left-corner.svg") left -70vmin top -65vmin no-repeat,
-    url("../reveal-images/calconnect-top-right-corner.svg") right -100vmin top -50vmin no-repeat,
-    url("../reveal-images/calconnect-bottom-left-corner.svg") left -55vmin bottom -40vmin no-repeat,
-    url("../reveal-images/calconnect-bottom-right-corner.svg") right -50vmin bottom -50vmin no-repeat,
+    url("../reveal-images/ogc-top-left-corner.svg") left -70vmin top -65vmin no-repeat,
+    url("../reveal-images/ogc-top-right-corner.svg") right -100vmin top -50vmin no-repeat,
+    url("../reveal-images/ogc-bottom-left-corner.svg") left -55vmin bottom -40vmin no-repeat,
+    url("../reveal-images/ogc-bottom-right-corner.svg") right -50vmin bottom -50vmin no-repeat,
     white;
 
   //.logo {
-  //  background-image: url("../reveal-images/calconnect-top-corner.svg");
+  //  background-image: url("../reveal-images/ogc-top-corner.svg");
   //}
 }
 
@@ -184,7 +184,7 @@ html {
 .reveal h1,
 .reveal h2
 {
-	background-color: $ccviolet;
+	background-color: $ogcblue;
 	color: #fff;
 }
 
@@ -247,7 +247,7 @@ html {
 	.logo--event,
   .logo--banner {
     position: absolute;
-    color: $ccviolet;
+    color: $ogcblue;
     font-family: $headingFont;
     margin-left: auto;
     margin-right: auto;
@@ -282,7 +282,7 @@ html {
 	}
 
 	.logo {
-		background-image: url("../reveal-images/calconnect-square.svg");
+		background-image: url("../reveal-images/ogc-logo.png");
 		background-repeat: no-repeat;
 		background-size: auto 100%;
 		display: inline-block;
@@ -346,10 +346,10 @@ html {
 	@include section(0vmin);
 
   background:
-    url("../reveal-images/calconnect-top-left-corner.svg") left -90vmin top -50vmin no-repeat,
-    url("../reveal-images/calconnect-top-right-corner.svg") right -60vmin top -65vmin no-repeat,
-    url("../reveal-images/calconnect-bottom-left-corner.svg") left -58vmin bottom -35vmin no-repeat,
-    url("../reveal-images/calconnect-bottom-right-corner.svg") right -45vmin bottom -45vmin no-repeat,
+    url("../reveal-images/ogc-top-left-corner.svg") left -90vmin top -50vmin no-repeat,
+    url("../reveal-images/ogc-top-right-corner.svg") right -60vmin top -65vmin no-repeat,
+    url("../reveal-images/ogc-bottom-left-corner.svg") left -58vmin bottom -35vmin no-repeat,
+    url("../reveal-images/ogc-bottom-right-corner.svg") right -45vmin bottom -45vmin no-repeat,
     white;
 
   h1 {
@@ -383,7 +383,7 @@ html {
 	}
 
 	.logo {
-    background-image: url("../reveal-images/calconnect-square.svg");
+    background-image: url("../reveal-images/ogc-logo.png");
 		height: 12vmin;
 		width: 12vmin;
 	}
@@ -465,7 +465,7 @@ html {
 	&:not([class*='color--']),
 	&.color--light {
 		.logo {
-      background-image: url("../reveal-images/calconnect-square.svg");
+      background-image: url("../reveal-images/ogc-logo.png");
 		}
 	}
 	&.color--midnight,
@@ -678,7 +678,7 @@ html {
 	}
 
 	.logo {
-    background-image: url("../reveal-images/calconnect-square.svg");
+    background-image: url("../reveal-images/ogc-logo.png");
 		background-position: center;
 		background-size: contain;
 		height: auto;

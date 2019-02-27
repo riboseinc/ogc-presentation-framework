@@ -12,7 +12,7 @@ SHELL := /bin/bash
 
 all: $(OUT_FILES)
 
-%.html: %.adoc revealjs-css reveal.js images bundle ../cc-presentation-framework/revealjs-css/calconnect.css
+%.html: %.adoc revealjs-css reveal.js images bundle ../ogc-presentation-framework/revealjs-css/ogc.css
 	bundle exec asciidoctor-revealjs $< --trace
 
 %.pdf: %.html
@@ -52,33 +52,33 @@ Gemfile Gemfile.lock package.json:
 # Reveal.js-related jobs
 #
 
-CSS_SRC := ../cc-presentation-framework/revealjs-css/calconnect.scss
+CSS_SRC := ../ogc-presentation-framework/revealjs-css/ogc.scss
 
 $(CSS_SRC):
 	git submodule update --init
-	pushd ../cc-presentation-framework ; \
+	pushd ../ogc-presentation-framework ; \
 		git submodule update --init
 
-../cc-presentation-framework/revealjs-css/calconnect.css: $(CSS_SRC) ../cc-presentation-framework/reveal.js/node_modules/grunt
-	cp $< ../cc-presentation-framework/reveal.js/css/theme/source/
-	pushd ../cc-presentation-framework/reveal.js ; \
+../ogc-presentation-framework/revealjs-css/ogc.css: $(CSS_SRC) ../ogc-presentation-framework/reveal.js/node_modules/grunt
+	cp $< ../ogc-presentation-framework/reveal.js/css/theme/source/
+	pushd ../ogc-presentation-framework/reveal.js ; \
 		grunt css-themes
-	cp ../cc-presentation-framework/reveal.js/css/theme/calconnect.css ../cc-presentation-framework/revealjs-css/
-	rm -f ../cc-presentation-framework/reveal.js/css/theme/calconnect.scss
-	rm -f ../cc-presentation-framework/reveal.js/css/theme/calconnect.css
+	cp ../ogc-presentation-framework/reveal.js/css/theme/ogc.css ../ogc-presentation-framework/revealjs-css/
+	rm -f ../ogc-presentation-framework/reveal.js/css/theme/ogc.scss
+	rm -f ../ogc-presentation-framework/reveal.js/css/theme/ogc.css
 
-../cc-presentation-framework/reveal.js/node_modules/grunt:
-	pushd ../cc-presentation-framework/reveal.js ; \
+../ogc-presentation-framework/reveal.js/node_modules/grunt:
+	pushd ../ogc-presentation-framework/reveal.js ; \
 		npm install ; \
 		popd
 
-reveal-images: ../cc-presentation-framework/reveal-images
+reveal-images: ../ogc-presentation-framework/reveal-images
 	ln -s $< .
 
-revealjs-css: ../cc-presentation-framework/revealjs-css
+revealjs-css: ../ogc-presentation-framework/revealjs-css
 	ln -s $< .
 
-reveal.js: ../cc-presentation-framework/reveal.js
+reveal.js: ../ogc-presentation-framework/reveal.js
 	ln -s $< .
 
 #

@@ -1,7 +1,10 @@
 /**
- * CalConnect theme for reveal.js.
+ * OGC theme for reveal.js.
  */
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+body {
+  margin: 0; }
+
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222; }
 
@@ -13,23 +16,23 @@ body {
   background-color: #fff; }
 
 .reveal {
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial;
   font-size: inherit;
   font-weight: normal;
   color: #222; }
 
 ::selection {
   color: #fff;
-  background: #9298ca;
+  background: #0073e6;
   text-shadow: none; }
 
 ::-moz-selection {
   color: #fff;
-  background: #9298ca;
+  background: #0073e6;
   text-shadow: none; }
 
-.reveal .slides > section,
-.reveal .slides > section > section {
+.reveal .slides section,
+.reveal .slides section > section {
   line-height: 1.3;
   font-weight: inherit; }
 
@@ -44,7 +47,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #222;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial;
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: normal;
@@ -187,10 +190,12 @@ body {
   border-bottom: none; }
 
 .reveal sup {
-  vertical-align: super; }
+  vertical-align: super;
+  font-size: smaller; }
 
 .reveal sub {
-  vertical-align: sub; }
+  vertical-align: sub;
+  font-size: smaller; }
 
 .reveal small {
   display: inline-block;
@@ -205,20 +210,20 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #485094;
+  color: #003366;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
   transition: color .15s ease; }
 
 .reveal a:hover {
-  color: #6f77b9;
+  color: #0059b3;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
   color: #fff;
-  background: #2f3461; }
+  background: #000d1a; }
 
 /*********************************************
  * IMAGES
@@ -240,26 +245,33 @@ body {
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
-  border-color: #485094;
+  border-color: #003366;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls {
-  color: #485094; }
+  color: #003366; }
 
 /*********************************************
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
-  color: #485094; }
+  color: #003366; }
 
 .reveal .progress span {
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+
+/*********************************************
+ * PRINT BACKGROUND
+ *********************************************/
+@media print {
+  .backgrounds {
+    background-color: #fff; } }
 
 html {
   font-size: 3.8vmin; }
@@ -287,19 +299,19 @@ html {
 .reveal .slides section {
   background-color: #FFFFFF;
   color: #000000;
-  background: url("../reveal-images/calconnect-top-left-corner.svg") left -70vmin top -65vmin no-repeat, url("../reveal-images/calconnect-top-right-corner.svg") right -100vmin top -50vmin no-repeat, url("../reveal-images/calconnect-bottom-left-corner.svg") left -55vmin bottom -40vmin no-repeat, url("../reveal-images/calconnect-bottom-right-corner.svg") right -50vmin bottom -50vmin no-repeat, white; }
+  background: url("../reveal-images/ogc-top-left-corner.svg") left -70vmin top -65vmin no-repeat, url("../reveal-images/ogc-top-right-corner.svg") right -100vmin top -50vmin no-repeat, url("../reveal-images/ogc-bottom-left-corner.svg") left -55vmin bottom -40vmin no-repeat, url("../reveal-images/ogc-bottom-right-corner.svg") right -50vmin bottom -50vmin no-repeat, white; }
   .reveal .slides section ul {
     position: relative;
     list-style-type: none; }
   .reveal .slides section ul li:before {
     content: "\f105";
     font-family: FontAwesome;
-    color: #485094;
+    color: #003366;
     /* or whatever color you prefer */
     position: absolute;
     left: -3vmin; }
   .reveal .slides section .admonitionblock {
-    color: #485094; }
+    color: #003366; }
 
 .grid-wrapper {
   display: grid; }
@@ -327,7 +339,7 @@ html {
 
 .reveal h1,
 .reveal h2 {
-  background-color: #485094;
+  background-color: #003366;
   color: #fff; }
 
 .reveal h1,
@@ -336,7 +348,8 @@ html {
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-  padding: 2.5vmin; }
+  padding: 2.5vmin;
+  margin: 0; }
 
 .reveal .slides section {
   box-sizing: border-box;
@@ -363,8 +376,8 @@ html {
   .reveal .slides section .logo--event,
   .reveal .slides section .logo--banner {
     position: absolute;
-    color: #485094;
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    color: #003366;
+    font-family: "Helvetica Neue", Helvetica, Arial;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -389,7 +402,7 @@ html {
     display: flex;
     grid-area: header; }
   .reveal .slides section .logo {
-    background-image: url("../reveal-images/calconnect-square.svg");
+    background-image: url("../reveal-images/ogc-logo.png");
     background-repeat: no-repeat;
     background-size: auto 100%;
     display: inline-block;
@@ -434,14 +447,14 @@ html {
 .reveal .slides section.title {
   height: 100vh;
   margin: 0;
-  background: url("../reveal-images/calconnect-top-left-corner.svg") left -90vmin top -50vmin no-repeat, url("../reveal-images/calconnect-top-right-corner.svg") right -60vmin top -65vmin no-repeat, url("../reveal-images/calconnect-bottom-left-corner.svg") left -58vmin bottom -35vmin no-repeat, url("../reveal-images/calconnect-bottom-right-corner.svg") right -45vmin bottom -45vmin no-repeat, white;
+  background: url("../reveal-images/ogc-top-left-corner.svg") left -90vmin top -50vmin no-repeat, url("../reveal-images/ogc-top-right-corner.svg") right -60vmin top -65vmin no-repeat, url("../reveal-images/ogc-bottom-left-corner.svg") left -58vmin bottom -35vmin no-repeat, url("../reveal-images/ogc-bottom-right-corner.svg") right -45vmin bottom -45vmin no-repeat, white;
   color: #000000;
   text-align: center; }
   .reveal .slides section.title h1 {
     color: #FFFFFF;
-    margin-top: 20vmin;
-    margin-bottom: 10vmin; }
+    margin-top: 20vmin; }
   .reveal .slides section.title .preamble {
+    margin-top: 10vmin;
     font-size: 4vmin; }
   @media (max-width: 768px) {
     .reveal .slides section.title {
@@ -453,7 +466,7 @@ html {
     grid-template-rows: 6vmin 1fr auto;
     grid-column-gap: 10vmin; }
   .reveal .slides section.title .logo {
-    background-image: url("../reveal-images/calconnect-square.svg");
+    background-image: url("../reveal-images/ogc-logo.png");
     height: 12vmin;
     width: 12vmin; }
   .reveal .slides section.title .content {
@@ -506,7 +519,7 @@ html {
   min-height: 4em; }
 
 .reveal .slides section.subsection:not([class*='color--']) .logo, .reveal .slides section.subsection.color--light .logo {
-  background-image: url("../reveal-images/calconnect-square.svg"); }
+  background-image: url("../reveal-images/ogc-logo.png"); }
 
 .reveal .slides section.subsection.color--midnight .description, .reveal .slides section.subsection.color--ice .description, .reveal .slides section.subsection.color--radiant .description {
   color: #EEEDEF; }
@@ -663,7 +676,7 @@ html {
     display: flex;
     height: 100%; }
   .reveal .slides section.end .logo {
-    background-image: url("../reveal-images/calconnect-square.svg");
+    background-image: url("../reveal-images/ogc-logo.png");
     background-position: center;
     background-size: contain;
     height: auto;
@@ -694,6 +707,9 @@ figure.code pre {
   margin: 0;
   width: 100%;
   overflow: hidden; }
+
+.reveal pre {
+  font-size: 0.8em; }
 
 .reveal pre code {
   background-color: #3f3f3f;
